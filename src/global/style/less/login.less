@@ -1,0 +1,103 @@
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    overflow-x: hidden;
+    .bg{
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 410px;
+        overflow: hidden;
+    }
+    .body{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            flex: 0 0 170px;
+            h1{
+                color: #fff;
+                font-size: 44px;
+                line-height: 170px;
+            }	
+        }
+        .section{
+            flex-grow: 2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                margin: 30px 0;
+                font-size: 30px;
+                font-weight: 500;
+                color: #fff;
+                letter-spacing: 10px;
+            }
+            .form{
+                width: 470px;
+                padding: 52px 46px;
+                background: rgba(255,255,255,0.5);
+                border-radius: 10px;
+                span{
+                    display: block;
+                    width: 100%;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    &.mb{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 44px;
+                        margin-bottom: 20px;
+                        background: #fff;
+                        i{
+                            flex: 0 0 66px;
+                            text-align: center;
+                            font-size: 24px;
+                            color: #ccc;
+                        }
+                        input{
+                            flex: 1;
+                            border: none;
+                            font-size: 16px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                    }
+                    strong{
+                        color: red;
+                    }
+                    button{
+                        width: 100%;
+                        background: #46a5ff;
+                        height: 44px;
+                        font-size: 20px;
+                        border: none;
+                        color: #fff;
+                        margin-top: 48px;
+                    }
+                }
+            }
+        }
+        .foot{
+            margin-bottom: 30px;
+            text-align: center;
+            img{
+                margin: 20px 0;
+            }
+        }
+    }
+}
